@@ -1,6 +1,8 @@
 #include <math.h>
 #include <stdio.h>
 
+// Les fonctions doivents etre nommer avant d'etre appeler sinon vous aurez une Exception de
+// error: call to undeclared function 'add'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
 int add (int a, int b){
     return a+b;
 }
