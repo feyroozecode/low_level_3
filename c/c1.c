@@ -23,9 +23,9 @@ int main(){
   }
   printf("\n");
 
-
   // funciton
   int sume_result = add(a, b);
+  printf("Results of Sum of %d and %d = %d \n", a, b, sume_result);
 
   return 0;
 
