@@ -13,12 +13,11 @@ int divide(int x, int y){
     }
 }
 
-
 // main
 int main(int argc, char *argv[]){
 
     // Calculatrice, ADD, SUBS, MULTIPLY, DIVIDE
-    printf("******* Bienvenue sur la super Calc C-Calc *******\n");
+    printf("******* Bienvenue sur la super C-Calc *******\n");
     if(argc != 4){
         printf("Usage: %s <numbre1> <operator> number2\n", argv[0]);
         return 1;
