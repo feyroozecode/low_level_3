@@ -5,12 +5,8 @@ int add(int a,int b) {return a +b;}
 int sub(int x, int y){return x - y;}
 int multiply(int x, int y){return x * y;}
 int divide(int x, int y){
-    if(y < 0){
-        printf("NAN");
-        return -1;
-    } else {
-        return x/y;
-    }
+    if(y < 0){ printf("NAN"); return -1; }
+    else { return x/y; }
 }
 
 // main
@@ -29,23 +25,13 @@ int main(int argc, char *argv[]){
     double result;
 
     switch (operator) {
-        case '+':
-            result = add(num1, num2);
-            break;
-        case '-':
-            result = sub(num1, num2);
-            break;
-        case 'x':
-            result = multiply(num1, num2);
-            break;
-        case '/':
-            result = divide(num1, num2);
-            break;
-        default:
-            printf("Operateur invalide. Utiliser +, -, x, ou /. \n");
-            return 1;
+        case '+': result = add(num1, num2);         break;
+        case '-': result = sub(num1, num2);         break;
+        case 'x': result = multiply(num1, num2);    break;
+        case '/': result = divide(num1, num2);      break;
+        default:  printf("Operateur invalide. Utiliser +, -, x, ou /. \n");
+        return 1;
     }
-
     printf("Résultat: %.2f\n", result);
 
     return 0;
