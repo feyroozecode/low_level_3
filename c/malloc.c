@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+
 typedef struct {
     char name[50];
     int age;
@@ -16,7 +17,7 @@ int main(){
     *ptr_int = 10;
     printf("Valeur alouée dynamiquement: %d\n", *ptr_int);
     free(ptr_int); // liberer la mémoire
- 
+
    // Allcoation dynamique pour une structure
    Person *p  = (Person *) malloc(sizeof(Person));
    if ( p == NULL) {
@@ -27,6 +28,5 @@ int main(){
    p->age = 25;
    printf("Person: %s est agé de %d \n", p->name, p->age);
 
-  
-
+   return 0;
 }
