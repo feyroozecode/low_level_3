@@ -28,5 +28,6 @@ int main(){
    p->age = 25;
    printf("Person: %s est agé de %d \n", p->name, p->age);
 
-   return 0;
+  
+    return 0;
 }
