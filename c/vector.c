@@ -42,6 +42,7 @@ void free_vector(IntVector *vec){
 }
 
 int main(){
+    printf("Vector Allocation Test...");
     IntVector my_vector;
     init_vector(&my_vector, 2); // Start with a capacity of 2
 
@@ -54,7 +55,7 @@ int main(){
         printf("%d", my_vector.data[i]);
     }
     printf("\n");
-    printf("Actual size: %zu, Cpacity: %zu\n", my_vector.size, my_vector.capacity);
+    printf("Actual size: %zu, Capacity: %zu\n", my_vector.size, my_vector.capacity);
 
     free_vector(&my_vector);
 
