@@ -14,7 +14,7 @@ int main(){
 
    file = fopen("example.txt", "r"); // Open file in read Mode
    if(file == NULL){
-    printf("Erreur lors de louerture du fichiers=.\n");
+    printf("Erreur lors de l'ouverture du fichiers=.\n");
     return -1;
    }
 

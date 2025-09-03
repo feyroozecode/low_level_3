@@ -12,7 +12,7 @@ int main(){
  float weight = 55.7;
  char grade = 'A';
 
-  printf("Donc vous etes agée de %d, poids %1f, VOTRE GRADE est %c\n", age, weight, grade );
+ printf("Donc vous etes agée de %d, poids %1f, VOTRE GRADE est %c\n", age, weight, grade );
 
   // Operaters
   int a = 14, b = 21;

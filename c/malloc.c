@@ -5,6 +5,7 @@
 typedef struct {
     char name[50];
     int age;
+    double weight;
 } Person;
 
 int main(){
@@ -26,8 +27,8 @@ int main(){
    }
    strcpy(p->name, "Ali");
    p->age = 25;
-   printf("Person: %s est agé de %d \n", p->name, p->age);
+   p->weight = 65.5;
+   printf("Person: %s est agé de %d  et vous paisiez %f \n", p->name, p->age, p->weight);
 
-  
-    return 0;
+   return 0;
 }

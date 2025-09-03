@@ -17,22 +17,21 @@ int main(int argc, char *argv[]){
   int lines = 0;
   int words = 0;
   int chars = 0;
-  int in_word = 0; // Flag to kinow if we are inside an word
-  int c;  
+  int in_word = 0; // Flag to know if we are inside an word
+  int c;
 
-
-  while((c = fgetc(file)) != EOF){
-   chars++;  
-   if(c == '\n'){
+  while((c = fgetc(file)) != EOF){  // KEEPREEPEATING WHEN IS NOT END OF FILE
+   chars++;
+   if(c == '\n'){ // When is LINE TO NEXT
      lines++;
    }
-   if(isspace(c)){
+   if(isspace(c)){  // DOT COUNT SPACESX
      in_word = 0;
    } else if (in_word == 0 ){
      words++;
-    in_word = 1;
+    in_word = 1;  // COUNT WORD
    }
-  } 
+  }
 
   if(chars > 0 && (c != '\n')){
    lines++;
