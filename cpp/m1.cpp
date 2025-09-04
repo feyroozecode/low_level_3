@@ -48,7 +48,7 @@ int main() {
     std::vector<int> numbers ;
     numbers.push_back(6);
     std::cout << "Element in Vector";
-    for(int num : numbers) {
+    for(int num = 0; num <= numbers.size(); num++) {
         std::cout << num << "";
     }
 
