@@ -10,15 +10,15 @@ class Cat{
 
     // constructor
     Cat(std::string name , int age) : name(name), age(age) {
-        std::cout << name << "The cat is Born \n";
+        std::cout << name << " The cat is Born \n";
     }
 
     // Method
-    void mewew(){
-        std::cout<< name << "Say Mieew Miouw";
+    void makeSound(){
+        std::cout<< name << " Say Meow Meow \n";
     }
 
-    // DESTRCUTOR
+    // DESTRUCTOR
     ~Cat(){
         std::cout << name << " The cat passed away \n";
     }
@@ -26,38 +26,38 @@ class Cat{
 
 
 int main() {
-    // Creating the Object
-    Cat majel("Majel", 4);
-    majel.mewew();
+    // Creating the Cat Object
+    Cat magel("Majel", 4);
+    magel.makeSound();
 
-    // Ref vs Ppinters
+    // Ref vs Pointers
     int a = 10;
     int &ref_a = a; // Ref to a
-    int *ptr_a = &a; // Poiunter to a
+    int *ptr_a = &a; // Pointer to a
 
     std::cout << " a: " << a << ", ref_a: " << ref_a << " , *ptr_a: " << *ptr_a << "\n";
 
-    ref_a = 20;  // Mofife the ref
-    std::cout << " a after ref_a_change" << a << "\n";
+    ref_a = 20;  // Modify the ref
+    std::cout << " a after ref_a_change : " << a << "\n";
     *ptr_a = 30; // mOdify the pointer
     std::cout << " a after ptr_a change : " << a << "\n";
 
     std::cout << "\n";
 
-    // std::vector (Conteneur dynamique)
+    // std::vector (Container )
     std::vector<int> numbers ;
     numbers.push_back(6);
-    std::cout << "Element in Vector";
-    for(int num = 0; num <= numbers.size(); num++) {
-        std::cout << num << "";
+    std::cout << "Element in Vector : \n";
+    for(size_t i = 0; i <= numbers.size(); ++i) {
+        std::cout << numbers[i] << "";
     }
 
-    // std::map (Assosiatif Tables)
+    // std::map (assosiative Tables)
     std::map<std::string, std::string>  capitals;
     capitals["FRANCE"] = "Paris",
-    capitals["Germany"] = "Berin",
+    capitals["Germany"] = "Berlin",
     capitals["Niger"]   = "Niamey";
-    std::cout << "Caital fo NIGER" <<  "\n";
+    std::cout << "Capital of NIGER" << capitals["Niger"] << "\n";
 
 
     return 0;
