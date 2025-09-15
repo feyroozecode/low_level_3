@@ -21,9 +21,17 @@ class BankAccount {
             std::cout << "Le montant du dépoit doit etre positif";
         }
    }
+
   void withdraw(double amount){
     if(amount > 0 && balance >= amount) {
-      std::cout << "Retrait de " << amount << " effectué. Nouveau solde:" << balance << "\n";
+      balance -= amount;
+      std::cout << "Retrait de " << amount << " effectué. Nouveau solde:" 
+         << balance << "\n";
+    } else if(amount <= 0){
+       std::cout << "Le montant du retrait doit etre positif. \n";
+    } else {
+        std::cout << "Solde insufisant pour le retreait de " << amount << 
+                     ". Solde actuel " << balance << "\n";
     }
   }
 
